@@ -17,4 +17,17 @@ public class Account {
         return owner;
     }
 
+    public void addMoney(double amount){
+        this.money += amount;
+    }
+
+    public boolean removeMoney(double amount){
+        if(this.money >= amount){
+            this.money -= amount;
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
